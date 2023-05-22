@@ -8,7 +8,7 @@ test('should be able to create a new slug from text', () => {
 })
 
 test('should be able to create a existing slug', () => {
-  const slug = new Slug('example-question-title')
+  const slug = Slug.create('example-question-title')
 
   expect(slug.getValue()).toBe('example-question-title')
 })
